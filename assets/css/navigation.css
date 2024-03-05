@@ -2,3 +2,52 @@
 @import "./styles.css";
 @import "./navigation.css";
 @import "./footer.css";
+@import "./contact.css";
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    height: 5rem;
+    width: 100%;
+    background-color: var(--dark);
+}
+
+.navbar-brand a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: var(--primary);
+
+    @media (min-width: 320px) and (max-width: 768px) {
+        font-size: 1rem;
+    }
+}
+
+.navbar-menu ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar-menu li a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: medium;
+    color: var(--primary);
+
+    @media (min-width: 320px) and (max-width: 768px) {
+        font-size: smaller;
+    }
+
+}
+
+.navbar-menu li a:hover{
+    color: var(--light);
+}

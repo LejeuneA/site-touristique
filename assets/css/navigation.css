@@ -16,17 +16,11 @@
     background-color: var(--dark);
 }
 
-.navbar-brand a {
-    color: var(--light);
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    color: var(--primary);
+.navbar-brand img {
+    width: 20em;
 
     @media (min-width: 320px) and (max-width: 768px) {
-        font-size: 1rem;
+        width: 15em;
     }
 }
 

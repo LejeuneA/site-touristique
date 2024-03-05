@@ -1,10 +1,17 @@
 @import "./reset.css";
 @import "./navigation.css";
 @import "./footer.css";
+@import "./contact.css";
 
+
+:root{
+    --primary: rgb(236, 153, 75);
+    --secondary: rgb(115, 119, 123);
+    --dark: rgb(21, 19, 60);
+    --light: rgb(241, 238, 233);
+}
 
 html, 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-

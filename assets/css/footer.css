@@ -61,3 +61,12 @@ footer {
         margin-top: 0.5rem;
     }
 }
+
+.footer-copyright a.github-link {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.footer-copyright a.github-link:hover {
+    color: var(--primary);
+}

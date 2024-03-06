@@ -12,7 +12,7 @@
     font-weight: 200;
     font-size: 2.5em;
     color: var(--primary);
-    margin: 1em auto;
+    margin: 1em auto 0.5em auto;
 
     @media (min-width: 320px) and (max-width: 768px) {
         font-size: 1.7em;
@@ -70,6 +70,9 @@
 
 #articles p{
     line-height: 1.5;
+    margin-bottom: 1em;
+    text-align:initial;
+    padding: 0 1rem;
 }
 
 #namur,
@@ -125,6 +128,7 @@
     margin-bottom: 10px;
     height: 2em;
     border-radius: 0.5rem;
+    margin-bottom: 1em;
 
 }
 

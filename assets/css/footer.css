@@ -1,8 +1,7 @@
 @import "./reset.css";
 @import "./navigation.css";
-@import "./articles.css";
 @import "./footer.css";
-@import "./contact.css";
+
 
 footer {
     display: flex;

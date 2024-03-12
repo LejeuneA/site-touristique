@@ -20,7 +20,7 @@ footer {
 
 .footer-menu ul {
     display: flex;
-    gap: 2rem;
+    gap: 2em;
     list-style: none;
 }
 
@@ -38,19 +38,40 @@ footer {
 
 .footer-row{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
+    align-items: center;
     flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+    gap: 2em;
 }
 
 .footer-copyright{
     display: flex;
-    justify-content: flex-end;
-    align-items: end;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.footer-contact{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
 }
 
 .footer-copyright,
 .footer-contact {
     font-size: small;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .footer-menu {

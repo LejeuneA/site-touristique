@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- Title -->
+    <title>Site touristique</title>
+</head>
+
+<body>
+
+    <!-------------------------------------------------------- 
+                          Navigation 
+    ---------------------------------------------------------->
+    <nav class="navbar">
+        <div class="navbar-content container">
+            <!-- Logo -->
+            <div class="navbar-brand">
+                <a href="./index.html"><img src="./assets/images/tourism.png" alt=""></a>
+            </div>
+            <!-- Logo end -->
+            <!-- Menu -->
+            <div class="navbar-menu">
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Menu end -->
+
+        </div>
+    </nav>
+    <!-------------------------------------------------------- 
+                        Navigation end
+    ---------------------------------------------------------->
+    <!-- Main -->
+    <main>
+    <!-------------------------------------------------------- 
+                             Contact
+    ---------------------------------------------------------->
+        <div class="main-title">
+            <h2>Contactez-nous</h2>
+        </div>
+
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">Prénom</label>
+                <input type="text" id="fname" name="firstname" placeholder="Votre prénom..">
+
+                <label for="lname">Nom</label>
+                <input type="text" id="lname" name="lastname" placeholder="Votre nom..">
+
+                <label for="country">Pay</label>
+                <select id="country" name="country">
+                    <option value="australia">Belgique</option>
+                    <option value="canada">France</option>
+                    <option value="usa">Angleterre</option>
+                </select>
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Rédiger votre message.."
+                    style="height:200px"></textarea>
+
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    <!-------------------------------------------------------- 
+                        Contact end
+    ---------------------------------------------------------->
+    </main>
+    <!-- Main end -->
+    <!-------------------------------------------------------- 
+                            Footer
+    ---------------------------------------------------------->
+    <footer>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="../public/index.html">Accueil</a></li>
+                <li><a href="../public/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <p>Açelya Lejeune © 2024 tous droits reserves</p><br>
+        </div>
+        <div class="footer-contact">
+            <p>Email: <a href="mailto:contactK@acelyalejeune.be">contact@acelyalejeune.be</a>
+                <span>Télephone: +32412345678</span>
+            </p>
+        </div>
+    </footer>
+    <!-------------------------------------------------------- 
+                            Footer
+    ---------------------------------------------------------->
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/3546d47201.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

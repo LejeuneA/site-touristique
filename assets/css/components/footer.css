@@ -1,0 +1,98 @@
+@import "../reset.css";
+@import "../css/styles.css";
+@import "./components/navigation.css";
+@import "./components/articles.css";
+@import "./components/header.css";
+@import "./components/contact.css";
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 3em;
+    text-align: center;
+}
+
+.footer-menu ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: medium;
+    color: var(--primary);
+    display: flex;
+}
+
+.footer-menu li a:hover {
+    color: var(--light);
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footer-copyright{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.footer-copyright,
+.footer-contact {
+    font-size: small;
+}
+
+.footer-menu {
+    margin-bottom: 1rem;
+}
+
+.footer-contact{
+    align-self:end;
+}
+
+.footer-contact a {
+    color: var(--primary);
+    text-decoration: none;
+    margin: 0 1rem 0 0;
+}
+
+.footer-contact a:hover {
+    color: var(--light);
+}
+
+
+
+/* --------------------------------------------------------  
+                    Responsive Design
+----------------------------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .footer-contact p {
+        margin-bottom: 1rem;
+    }
+
+    .footer-contact span {
+        display: block;
+        margin-top: 0.5rem;
+    }
+}
+
+.footer-copyright a.github-link {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.footer-copyright a.github-link:hover {
+    color: var(--primary);
+}

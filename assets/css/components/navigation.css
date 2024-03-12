@@ -1,0 +1,49 @@
+@import "../reset.css";
+@import "../css/styles.css";
+@import "./components/articles.css";
+@import "./components/header.css";
+@import "./components/contact.css";
+@import "./components/footer.css";
+
+
+.navbar {
+    width: 100%;
+    background-color: var(--dark);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.navbar-brand img {
+    width: 20em;
+
+    @media (min-width: 320px) and (max-width: 768px) {
+        width: 15em;
+    }
+}
+
+.navbar-menu ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar-menu li a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: medium;
+    color: var(--primary);
+
+    @media (min-width: 320px) and (max-width: 768px) {
+        font-size: smaller;
+    }
+
+}
+
+.navbar-menu li a:hover{
+    color: var(--light);
+}

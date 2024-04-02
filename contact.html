@@ -12,6 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <link rel="shortcut icon" type="image/icon" href="./assets/icons/favicon.png">
+
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 
@@ -22,13 +24,13 @@
 <body>
 
     <!-------------------------------------------------------- 
-                          Navigation 
+                          Navigation
     ---------------------------------------------------------->
     <nav class="navbar">
         <div class="navbar-content container">
             <!-- Logo -->
             <div class="navbar-brand">
-                <a href="./index.html"><img src="./assets/images/tourism.png" alt=""></a>
+                <a href="./index.html"><img src="./assets/logo/tourism.png" alt=""></a>
             </div>
             <!-- Logo end -->
             <!-- Menu -->
@@ -45,63 +47,109 @@
     <!-------------------------------------------------------- 
                         Navigation end
     ---------------------------------------------------------->
-    <!-- Main -->
-    <main>
+
     <!-------------------------------------------------------- 
-                             Contact
+                             Header
     ---------------------------------------------------------->
-        <div class="main-title">
-            <h2>Contactez-nous</h2>
+    <header class="main-header-contact">
+        <div class="main-header-content container">
+            <h1>POUR DES AVENTURES INOUBLIABLES</h1>
+            <p>Pour votre voyage ou collaboration, nous sommes là pour vous aider</p>
         </div>
-
-        <div class="container">
-            <form action="/action_page.php">
-                <label for="fname">Prénom</label>
-                <input type="text" id="fname" name="firstname" placeholder="Votre prénom..">
-
-                <label for="lname">Nom</label>
-                <input type="text" id="lname" name="lastname" placeholder="Votre nom..">
-
-                <label for="country">Pay</label>
-                <select id="country" name="country">
-                    <option value="australia">Belgique</option>
-                    <option value="canada">France</option>
-                    <option value="usa">Angleterre</option>
-                </select>
-
-                <label for="subject">Message</label>
-                <textarea id="subject" name="subject" placeholder="Rédiger votre message.."
-                    style="height:200px"></textarea>
-
-                <input type="submit" value="Envoyer">
-            </form>
-        </div>
+    </header>
     <!-------------------------------------------------------- 
-                        Contact end
+                        Header end
     ---------------------------------------------------------->
+
+    <main class="container">
+
+        <div class="blockquote-paragraph">
+            <blockquote><i class="fa-solid fa-quote-left"></i>
+                Nous sommes ravis de vous aider à organiser votre prochaine escapade en Wallonie. Que vous ayez des questions sur nos offres touristiques, des suggestions à partager ou que vous soyez intéressé par une collaboration, n'hésitez pas à nous contacter. Notre équipe dévouée est là pour répondre à toutes vos demandes et vous guider vers des aventures inoubliables dans cette magnifique région.
+                <i class="fa-solid fa-quote-right"></i>
+            </blockquote>
+        </div>
+        <!-------------------------------------------------------- 
+                                Contact form
+        ---------------------------------------------------------->
+        <!-- Contact section -->
+        <div class="contact-section">
+            <div class="main-title">
+                <h2>Contactez-nous</h2>
+            </div>
+            <!-- Contact form -->
+            <div class="container">
+                <form action="/action_page.php">
+                    <label for="fname">Prénom</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Votre prénom...">
+
+                    <label for="lname">Nom</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Votre nom...">
+
+                    <label for="country">Pay</label>
+                    <select id="country" name="country">
+                        <option value="australia">Belgique</option>
+                        <option value="canada">France</option>
+                        <option value="usa">Angleterre</option>
+                    </select>
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Rédiger votre message..."
+                        style="height:200px"></textarea>
+                    <!-- Checkbox -->
+                    <div class="checkbox">
+                        <input type="checkbox" id="cgu" name="cgu" required>
+                        <label for="cgu">J'accepte les condition générales d'utilisation</label>
+                    </div>
+                    <!-- Checkbox end -->
+                    <!-- Button -->
+                    <input type="reset" value="Réinitialiser">
+                    <input type="submit" value="Envoyer">
+                    <!-- Button end -->
+                </form>
+            </div>
+            <!-- Contact form end -->
+        </div>
+        <!-- Contact section end -->
+        <!-------------------------------------------------------- 
+                          Contact form end
+        ---------------------------------------------------------->
     </main>
-    <!-- Main end -->
+    <!-------------------------------------------------------- 
+                             Main end
+    ---------------------------------------------------------->
     <!-------------------------------------------------------- 
                             Footer
     ---------------------------------------------------------->
     <footer>
-        <div class="footer-menu">
-            <ul>
-                <li><a href="../public/index.html">Accueil</a></li>
-                <li><a href="../public/contact.html">Contact</a></li>
-            </ul>
+        <div class="footer-top">
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-copyright">
-            <p>Açelya Lejeune © 2024 tous droits reserves</p><br>
-        </div>
-        <div class="footer-contact">
-            <p>Email: <a href="mailto:contactK@acelyalejeune.be">contact@acelyalejeune.be</a>
-                <span>Télephone: +32412345678</span>
-            </p>
+        <div class="footer-bottom">
+            <div class="footer-row container">
+                <div class="footer-copyright">
+                    <p><a class="github-link" href="https://github.com/LejeuneA"><i class="fa fa-github"
+                                aria-hidden="true"></i>
+                            Açelya
+                            Lejeune</a> © 2024 tous droits reserves</p>
+                </div>
+                <div class="footer-contact">
+                    <div><i class="fa fa-envelope" aria-hidden="true"></i>Email: <a
+                            href="mailto:contactK@acelyalejeune.be">contact@acelyalejeune.be</a>
+
+                    </div>
+                    <div><i class="fa fa-phone" aria-hidden="true"></i>Télephone: +32412345678</div>
+                </div>
+            </div>
         </div>
     </footer>
     <!-------------------------------------------------------- 
-                            Footer
+                        Footer end
     ---------------------------------------------------------->
 
     <!-- Fontawesome -->

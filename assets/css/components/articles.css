@@ -1,58 +1,26 @@
 @import "../reset.css";
-@import "../css/styles.css";
-@import "./components/navigation.css";
-@import "./components/header.css";
-@import "./components/contact.css";
-@import "./components/footer.css";
+@import "../styles.css";
+@import "../components/navigation.css";
+@import "../components/footer.css";
+@import "../components/header.css";
+@import "../components/contact.css";
+
 
 
 /* Content */
 
-.main-title h2{
+/* Content */
+
+.main-title h2 {
     text-align: center;
     font-weight: 200;
     font-size: 2.5em;
-    color: var(--primary);
+    color: var(--secondary);
     margin: 1em auto 0.5em auto;
 
+    /* Responsive styles */
     @media (min-width: 320px) and (max-width: 768px) {
         font-size: 1.7em;
-    }
-}
-
-.fa-quote-left,
-.fa-quote-right {
-    font-size: 1.3em;
-    color: var(--primary);
-}
-
-/* Content end */
-
-.blockquote {
-    text-align: center;
-    font-size: 1.3em;
-    color: var(--dark);
-    margin: 1em auto 2em;
-    width: 70%;
-}
-
-.blockquote i {
-    display: block;
-    text-align: center;
-    font-weight: 200;
-    font-size: 2.5em;
-    color: var(--primary);
-    margin: 1em auto;
-}
-
-
-.content-box {
-    padding: 0 8em;
-    margin-bottom: 1em;
-    line-height: 1.5;
-
-    @media (min-width: 320px) and (max-width: 768px) {
-        padding: 0 3em;
     }
 }
 
@@ -63,22 +31,32 @@
     justify-content: center;
     margin: 2em 0;
 
+    /* Responsive styles */
     @media (min-width: 320px) and (max-width: 768px) {
         flex-direction: column;
         align-items: center;
     }
 }
 
-#articles p{
+#articles p {
     line-height: 1.5;
     margin-bottom: 2em;
-    text-align:initial;
+    text-align: initial;
     padding: 0 1rem;
 }
 
-#namur,
-#durbuy,
-#spa {
+#articles a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+#articles a:hover{
+    color: var(--primary);
+}
+
+#first-article,
+#second-article,
+#third-article {
     width: calc(33.33% - 20px);
     max-width: 100%;
     height: auto;
@@ -88,6 +66,7 @@
     text-align: center;
     margin-bottom: 20px;
 
+    /* Responsive styles */
     @media (min-width: 320px) and (max-width: 768px) {
         margin: 0;
         width: 100%;
@@ -105,21 +84,21 @@
     margin-bottom: 10px;
 }
 
-#namur .img-box {
+#first-article .img-box {
     background-image: url('../../images/namur.jpg');
 }
 
-#durbuy .img-box {
+#second-article .img-box {
     background-image: url('../../images/durbuy.jpg');
 }
 
-#spa .img-box {
+#third-article .img-box {
     background-image: url('../../images/spa.jpg');
 }
 
-#namur h3,
-#durbuy h3,
-#spa h3 {
+#first-article h3,
+#second-article h3,
+#third-article h3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,14 +112,14 @@
 
 }
 
-.read-more{
+.read-more {
     text-decoration: none;
     color: var(--primary);
     font-weight: 600;
     font-size: 1.2em;
 }
 
-.read-more:hover{
+.read-more:hover {
     color: var(--secondary);
 }
 

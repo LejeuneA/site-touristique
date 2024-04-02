@@ -7,10 +7,14 @@
 
 /* Colors */
 :root {
-    --primary: rgb(236, 153, 75);
-    --secondary: rgb(115, 119, 123);
-    --dark: rgb(21, 19, 60);
-    --light: rgb(241, 238, 233);
+    --primary: rgb(202, 223, 231);
+    --secondary: rgb(91, 143, 185);
+    --tertiary: rgb(98, 79, 130);
+    --dark: rgb(63, 59, 108);
+    --light: rgb(219, 231, 240);
+    --primary-lighter: rgb(220, 233, 239);
+    --body-backg-color: rgb(253, 250, 255);
+    
 }
 
 /* Fonts */
@@ -20,11 +24,63 @@ body {
 }
 
 
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+hr {
+    margin: 1rem 0;
+    border: 1px solid var(--tertiary);
+    opacity: 0.3;
+}
+
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 1em;
     width: 100%;
+    position: relative;
 }
 
+
+.fa-quote-left,
+.fa-quote-right {
+    font-size: 1.3em;
+    color: var(--primary);
+}
+
+/* Content end */
+
+.blockquote {
+    text-align: center;
+    font-size: 1.3em;
+    color: var(--dark);
+    margin: 1em auto 2em;
+    width: 70%;
+}
+
+.blockquote i {
+    display: block;
+    text-align: center;
+    font-weight: 200;
+    font-size: 2.5em;
+    color: var(--primary);
+    margin: 1em auto;
+}
+
+.introduction-box {
+    padding: 0 8em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    font-weight: 300;
+    text-align:justify;  
+    text-justify:inter-word;
+    font-size: 1em;
+
+    /* Responsive styles */
+    @media (min-width: 320px) and (max-width: 768px) {
+        padding: 0 3em;
+        font-size: 0.9em;
+    }
+}
